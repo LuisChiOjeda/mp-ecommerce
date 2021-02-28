@@ -1,6 +1,6 @@
 //Handle call to backend and generate preference.
 document.getElementById("checkout-btn").addEventListener("click", function() {
-    console.log("si entro a js");
+    console.log("si en  tro a js");
     $('#checkout-btn').attr("disabled", true);
     
     var orderData = {
