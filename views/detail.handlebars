@@ -77,14 +77,10 @@
 
                                     </h3>
                                 </div>
-                                <h3  id="unit-price">
-                                    {{ price }}
-                                </h3>
-                                <h3 id="quantity" >
-                                    {{ unit }}
-                                </h3>
+                                <h3  id="unit-price">{{ price }}</h3>
+                                <h3 id="q" >{{ unit }}</h3>
                             </div>
-                            <button type="submit" class="mercadopago-button" formmethod="post" id="checkout-btn">Pagar</button>
+                            <button type="submit" class="mercadopago-button" onClick="mp()" id="checkout-btn" >Pagar</button>
                              
                         </div>
                         
@@ -94,4 +90,36 @@
         </div>
     </div>
 </div>
+ <section class="payment-form dark">
+        <div class="container_payment">
+          <div class="block-heading">
+            <h2>Checkout</h2>
+            <p>Presiona en el boton pagar para el siguiente paso </p>
+          </div>
+          <div class="form-payment">
+            <div class="products">
+              <h2 class="title">Pago del celular {{title}}</h3>
+              <div class="item">
+                <span class="price" id="summary-price"></span>
+                <p class="item-name">Producto <span id="summary-quantity"> {{title}}</span></p>
+              </div>
+              <div class="total">Total <span class="price" id="summary-total" ></span></div>
+            </div>
+            <div class="payment-details">
+              <div class="form-group col-sm-12">
+                <br>      
+                <div id="button-checkout">
+                </div>                 
+                <br>
+                <a id="go-back">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 10 10" class="chevron-left">
+                    <path fill="#009EE3" fill-rule="nonzero"id="chevron_left" d="M7.05 1.4L6.2.552 1.756 4.997l4.449 4.448.849-.848-3.6-3.6z"></path>
+                  </svg>
+                  Go back to Shopping Cart
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
    
